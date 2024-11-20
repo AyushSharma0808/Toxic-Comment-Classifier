@@ -16,7 +16,8 @@ from sklearn.metrics import accuracy_score, classification_report
 nltk.download('stopwords')
 
 # Load dataset
-df = pd.read_csv('train.csv')  # Ensure train.csv is in the same directory as this file
+file_url = "https://drive.google.com/uc?id=1XAfwiES5bwv7snvb8mia3z082hy7a6-W"
+df = pd.read_csv(file_url) # Ensure train.csv is in the same directory as this file
 df.drop(['id'], axis=1, inplace=True)
 df.dropna(inplace=True)
 
