@@ -49,7 +49,7 @@ def stemming(text):
 # Apply preprocessing to comments
 df['comment_text'] = df['comment_text'].apply(clean_text)
 df['comment_text'] = df['comment_text'].apply(remove_stopwords)
-df['comment_text'] = df['comment_text'].apply(stemming)
+#df['comment_text'] = df['comment_text'].apply(stemming)
 
 X = df["comment_text"]
 Y = df.drop(['comment_text'], axis=1)
